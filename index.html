@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Statistics App</title>
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="dist/css/general.css">
+</head>
+
+<body>
+  <div class="container">
+    <nav class="header bar">
+      <button class="button-header">
+        <i class="fa fa-bars"><span>Statistics</span></i>
+      </button>
+      <button class="button">
+        <i class="fa fa-search"></i>
+      </button>
+      <div class="subheader tabs">
+        <div class="tab active">last week</div>
+        <div class="tab">august</div>
+        <div class="tab">july</div>
+      </div>
+    </nav>
+    <div class="content">
+      <div class="row">
+        <div class="chart-container">
+          <div class="canvas-container">
+            <canvas id="chart-first"></canvas>
+          </div>
+          <div class="chart-labels">
+            <div class="chart-label-item">
+              <i class="fa fa-circle"></i>
+              <ul>
+                <li>Views</li>
+                <li>802 023 352</li>
+              </ul>
+            </div>
+            <div class="chart-label-item">
+              <i class="fa fa-circle"></i>
+              <ul>
+                <li>Favourites</li>
+                <li>23 356 834</li>
+              </ul>
+            </div>
+            <div class="chart-label-item">
+              <i class="fa fa-circle"></i>
+              <ul>
+                <li>Followers</li>
+                <li>14 235</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="chart-container">
+          <canvas id="chart-second"></canvas>
+        </div>
+      </div>
+      <div class="row">
+        <div class="recent-viewers">
+          <p>Recent Viewers</p>
+          <div class="avatars">
+            <div class="avatar-item"><img src="http://lorempixel.com/100/100/people/1" alt=""></div>
+            <div class="avatar-item"><img src="http://lorempixel.com/100/100/people/2" alt=""></div>
+            <div class="avatar-item"><img src="http://lorempixel.com/100/100/people/3" alt=""></div>
+            <div class="avatar-item"><img src="http://lorempixel.com/100/100/people/4" alt=""></div>
+            <div class="avatar-item"><img src="http://lorempixel.com/100/100/people/5" alt=""></div>
+            <div class="avatar-item-last"><img src="http://lorempixel.com/100/100/people/6" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="bower_components/Chart.js/Chart.min.js"></script>
+  <script src="dist/js/app.js"></script>
+</body>
+
+</html>
