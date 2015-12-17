@@ -1,0 +1,136 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+  blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  color: #fff; }
+
+.container {
+  background: #363543;
+  position: absolute;
+  min-height: 100% !important;
+  min-width: 100% !important; }
+
+.content {
+  position: absolute;
+  min-height: 100% !important;
+  min-width: 100% !important;
+  display: flex;
+  flex-direction: column; }
+
+.row {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .row .col {
+    flex: 1; }
+
+.header {
+  min-height: 50px; }
+
+.bar {
+  padding: 10px 0 0 0; }
+
+.subheader {
+  margin-top: 10px; }
+
+.tabs {
+  display: flex; }
+  .tabs .tab {
+    flex: 1;
+    font-size: .9rem;
+    padding: 10px 0;
+    text-align: center;
+    text-transform: uppercase; }
+    .tabs .tab.active {
+      border-bottom: 2px solid #E6443F; }
+    .tabs .tab:hover {
+      border-bottom: 2px solid #E6443F;
+      cursor: pointer; }
+
+.button, .button-header {
+  font-size: 1rem;
+  background: transparent;
+  color: #fff;
+  border: 0; }
+
+.button-header {
+  padding-left: 10px; }
+
+.chart-container {
+  display: flex;
+  overflow: hidden; }
+  .chart-container .chart-labels {
+    flex: 1; }
+    .chart-container .chart-labels .chart-label-item {
+      display: flex; }
+      .chart-container .chart-labels .chart-label-item i {
+        flex: 1;
+        font-size: .6rem; }
+      .chart-container .chart-labels .chart-label-item ul {
+        flex: 6; }
+  .chart-container .canvas-container {
+    flex: 1;
+    text-align: center; }
+    .chart-container .canvas-container #chart-first {
+      display: inline; }
+  .chart-container #chart-second {
+    flex: 1;
+    margin: 0 -5px; }
+
+.recent-viewers {
+  padding: 0 15px; }
+
+.avatars {
+  display: flex; }
+  .avatars .avatar-item, .avatars .avatar-item-last {
+    flex: 1;
+    display: inline-block; }
+    .avatars .avatar-item img, .avatars .avatar-item-last img {
+      height: 42px;
+      width: 42px;
+      border-radius: 50%; }
+  .avatars .avatar-item-last img {
+    -webkit-filter: opacity(25%); }
